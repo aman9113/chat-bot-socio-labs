@@ -1,0 +1,120 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Chat Toggle Button */
+#chat-toggle {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#chat-toggle img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Chatbot Widget */
+.chatbot {
+  position: fixed;
+  bottom: 90px;
+  right: 25px;
+  width: 360px;
+  max-width: 95%;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  overflow: hidden;
+  display: none;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+/* Header */
+.chat-header {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.chat-header img.header-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: white;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.back-arrow {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Chat Body */
+.chat-body {
+  padding: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.bot-msg {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-group button {
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form input, form select, form button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Footer */
+.whatsapp-footer {
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+
+.whatsapp-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
